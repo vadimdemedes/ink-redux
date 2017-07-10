@@ -10,6 +10,7 @@
 		"url": "github.com/vadimdemedes"
 	},
 	"main": "dist/index.js",
+	"typings": "index.d.ts",
 	"engines": {
 		"node": ">=6"
 	},
@@ -20,12 +21,16 @@
 		"prepublish": "npm run build"
 	},
 	"files": [
-		"dist"
+		"dist",
+		"index.d.ts"
 	],
 	"keywords": [
 		"ink",
 		"redux"
 	],
+	"dependencies": {
+		"@types/react-redux": "^4.4.45"
+	},
 	"devDependencies": {
 		"ava": "^0.20.0",
 		"babel-cli": "^6.24.1",
