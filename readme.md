@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save ink-redux
+$ npm install ink-redux
 ```
 
 
@@ -64,6 +64,7 @@ See [react-redux](https://github.com/reactjs/react-redux) for documentation.
 - Matches API of `redux@4`
 - Doesn't support `options` in `connect()`
 - Doesn't support returning a function from `mapStateToProps()`
+
 
 ## License
 
