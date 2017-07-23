@@ -6,15 +6,16 @@
 ## Install
 
 ```
-$ npm install ink-redux
+$ npm install redux ink-redux
 ```
 
 
 ## Usage
 
 ```jsx
-const {h, mount, Component} = require('ink');
+const {h, render, Component} = require('ink');
 const {Provider, connect} = require('ink-redux');
+const { createStore } = require("redux");
 
 const store = createStore((state = 0, action) => {
 	switch (action.type) {
@@ -47,7 +48,7 @@ const mapDispatchToProps = {
 
 const ConnectedCounter = connect(mapStateToProps, mapDispatchToProps)(Counter);
 
-mount((
+render((
 	<Provider store={store}>
 		<ConnectedCounter/>
 	</Provider>
