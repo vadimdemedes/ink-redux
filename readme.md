@@ -15,7 +15,7 @@ $ npm install redux ink-redux
 ```jsx
 const {h, render, Component} = require('ink');
 const {Provider, connect} = require('ink-redux');
-const { createStore } = require("redux");
+const {createStore} = require('redux');
 
 const store = createStore((state = 0, action) => {
 	switch (action.type) {
